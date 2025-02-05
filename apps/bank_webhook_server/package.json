@@ -1,0 +1,21 @@
+{
+  "name": "bank_webhook_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node ./dist/index.js",
+    "dev": "esr ./src/index.ts && node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@repo/db": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/express": "^5.0.0",
+    "esbuild-runner": "^2.2.2",
+    "express": "^4.21.2"
+  }
+}
